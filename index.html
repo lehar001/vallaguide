@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Vallaguiden</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <!-- Slect 2 -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <!-- Bootstrap
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<!-- Latest compiled and minified CSS
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/normalize.css"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a class="navbar-logo" href="#">Vallaguide</a>
+    </header>
+
+    <div class="container">
+        <input class="search-box" type="text" id="location" aria-label="Var ska du åka?" placeholder="Var ska du åka?" />
+
+        <div class="results-container">
+            <div class="filter-container">
+                <span>Visar</span>
+                <select data-live-search="true" title="alla varumärken" multiple class="selectpicker filter filter-brand">
+                <option>Swix</option>
+                <option>Toko</option>
+                <option>Rode</option>
+            </select>
+            </div>
+            <p id="result-text"></p>
+            <div id="results-list">
+            </div>
+            <i class="fa fa-spinner fa-spin loader"></i>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><small>Powered by <a href="https://darksky.net/poweredby/">Dark Sky</a></small></p>
+    </footer>
+
+    <script defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD_UQI8Ii5R42h5XyuV8YMBZ1f3rilSGFg&libraries=places"></script>
+    <script type="text/javascript" src="js/getwax.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+</body>
+
+</html>
